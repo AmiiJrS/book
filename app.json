@@ -1,0 +1,28 @@
+{
+  "addons": [
+    "herokuconnect",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ],
+  "env": {
+    "LANG": {
+      "generator": "secret"
+    },
+    "RACK_ENV": {
+      "generator": "secret"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "book",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
